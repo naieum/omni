@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
+import music from './routes/music';
 
 type Bindings = {
   DB: D1Database;
@@ -26,9 +27,7 @@ app.get('/api/health', (c) => {
   return c.json({ status: 'healthy', timestamp: new Date().toISOString() });
 });
 
-// Music routes (coming soon)
-app.get('/api/music/search', (c) => {
-  return c.json({ message: 'Music search coming soon' });
-});
+// Music routes
+app.route('/api/music', music);
 
 export default app;
