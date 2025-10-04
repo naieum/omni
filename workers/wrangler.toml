@@ -1,0 +1,22 @@
+name = "omni-api"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "omni-db"
+database_id = "" # Will be filled after creating database
+
+# R2 Bucket
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "omni-media"
+
+# KV Namespace
+[[kv_namespaces]]
+binding = "CACHE"
+id = "" # Will be filled after creating namespace
+
+[vars]
+ENVIRONMENT = "development"

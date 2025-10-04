@@ -1,0 +1,42 @@
+{
+  "name": "omni",
+  "version": "0.1.0",
+  "description": "The last stop for all media. Own your content forever.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --workspace=workers",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:workers": "npm run dev --workspace=workers",
+    "build": "npm run build --workspaces",
+    "deploy": "npm run deploy --workspaces",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "workspaces": [
+    "frontend",
+    "workers"
+  ],
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naieum/omni.git"
+  },
+  "keywords": [
+    "media",
+    "streaming",
+    "cloudflare",
+    "music",
+    "movies",
+    "books",
+    "open-source"
+  ],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE"
+}
