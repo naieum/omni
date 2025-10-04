@@ -6,7 +6,7 @@ compatibility_date = "2025-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "omni-db"
-database_id = "" # Will be filled after creating database
+database_id = "de7a8240-fd4a-4140-9625-8cf50deb61fe"
 
 # R2 Bucket
 [[r2_buckets]]
@@ -16,7 +16,7 @@ bucket_name = "omni-media"
 # KV Namespace
 [[kv_namespaces]]
 binding = "CACHE"
-id = "" # Will be filled after creating namespace
+id = "9d237da1315f4028a1934a14b7a1a9e0"
 
 [vars]
 ENVIRONMENT = "development"
